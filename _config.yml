@@ -1,0 +1,13 @@
+title: Debug
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Blog para divulgar minhas paradas
+baseurl: "/debug-blog"
+url: "http://rxon7@github.io" 
+twitter_username: debug_twitter
+github_username:  debug@github
+
+# Build settings
+markdown: kramdown
+
+permalink: /:title
