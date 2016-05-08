@@ -4,6 +4,15 @@ title:  "Olá Jekyll!"
 date:   2016-03-17 23:28:03 -0300
 categories: start blog
 ---
+Jekyll é essa ferramenta para criar sites simples e estaticos ou seja, sites simples com o puro HTML.
+
+
+dê um gitclone e no seu diretorio e edita o config yml coloque o nome do blog, o e-mail, descrição e baseurl(se você quiser um dominio no seu blog)
+
+
+Instalacao:
+
+
 
 # Heading 1
 
