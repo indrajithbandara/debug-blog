@@ -189,8 +189,6 @@ db.pokemons.find(query)
 ##### Operadores Lógicos
 
 ### $or OU
-Se um objeto for verdadeiro ele retorna o verdadeiro
-
 
 #### Fazemos a buca de um pokemon que tenha o nome pikachu ou altura de 1.69
 var query = {$or: [{name: 'Pikachu'}, {height: 1.69}]}
@@ -216,6 +214,8 @@ db.pokemons.find(query)
 
 
 ###### $and E 
+
+##### O and só retorna se vc tiver todas as premissas verdadeiras
 var query = {$and: [{name: 'Pikachu'}, {height: 0.4}]}
 
 #### Passsamos o find e como ele satifaz todas as clausulas
@@ -230,11 +230,6 @@ db.pokemons.find(query)
   "height": 0.4
 }
 
-
-##### Operadores “Existênciais”
-
-### $exists - Retorna o objeto caso o campo exista, muito usado em tags
-db.collection.find( { campo : { $exists : true } } );
 
 
 
