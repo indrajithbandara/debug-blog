@@ -9,5 +9,4 @@ github_username: debug@github
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
 permalink: /:title
