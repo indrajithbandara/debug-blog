@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Game Dev!"
+title:  "Javascript!"
 date:   2016-10-13 15:32:03 -0300
 categories: start blog
 ---
 
-## 13 Programas Open Source para Desenvolvimento de Jogos
+## Iniciando no Javascript
