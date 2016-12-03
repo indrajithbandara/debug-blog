@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Trampos que faço na internet
 
 Meu blog curriculum https://github.com/Rxon7/curriculo-vitae
@@ -10,5 +11,15 @@ Meu repositorio no Bitbucket https://bitbucket.org/rxon7/
 
 Meu site de games 
 
+=======
+Meu blog curriculum https://github.com/Rxon7/curriculo-vitae
+>>>>>>> master
 
+Meu Blog pessoal http://rxon7.github.io/debug-blog/
 
+<<<<<<< HEAD
+=======
+Site que eu faço parte http://www.conversadesofa.com/
+
+Meu site de games  https://uppercutgamesblog.wordpress.com/
+>>>>>>> master
