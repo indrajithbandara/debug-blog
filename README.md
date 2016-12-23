@@ -1,4 +1,4 @@
-
+aldkfjaskj
 dfadfafa
 <<<<<<< HEAD
 ## Trampos que faço nas interwebs
