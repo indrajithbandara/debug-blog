@@ -6,3 +6,10 @@ categories: start blog
 ---
  =
 ## Iniciando no Javascript
+
+##### Descobrir o comprimento da string.
+"renan".length
+
+##### Operações matematicas
+3 + 4
+7 
