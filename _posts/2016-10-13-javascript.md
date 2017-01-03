@@ -31,4 +31,17 @@ strings são sequências de caracteres e números. Para criar um número escreva
 ##### Crie uma string, e compare o tamanho dela se for maior 10
 "Estou programando como um profissional".length > 10
 
+#### Para fazer o programa imprimir na tela temos que usar o console.log
+console.log(2 * 5);
+console.log("Alô");
+
+##### Agora vamos aprender mais sobre operadores de comparação.
+// Eis um exemplo de uso do operador maior que (>).
+console.log(15 > 4); // 15 > 4 resulta em true, então true e exibido.
+
+// Preencha com >, <, === de modo que o seguinte resulta em true:
+console.log("Xiao Hui".length  < 122);
+console.log("Goody Donaldson".length >  8);
+console.log(8*2 === 16);
+
 
