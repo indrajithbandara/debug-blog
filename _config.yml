@@ -9,4 +9,5 @@ github_username: debug@github
 
 # Build settings
 markdown: kramdown
+
 permalink: /:title

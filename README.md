@@ -1,3 +1,4 @@
-Para voltar se fizer alguma merda eh só criar um pull request para mim mesmo
-e depois mergir no site mesmo.
+*** Se der merda fazer um pull request, e depois fazer 
+um merge para o gh-pages ir para o master
+para o master
 
