@@ -648,35 +648,46 @@ Com esse operador você pode definir valores que serão adicionados apenas se oc
 Vamos pegar um cenário onde buscaremos um game em nossa planilha, porém o mesmo não se encontra nos registros, então inserimos ele com valores padrões.
 
 #### Vamos criar uma query que nao existe
-var query = {name: /Need for speed/i}
+var query = {name: /Street Fighter x Tekken/i}
 
 #### Vamos setar actvite true(vai que ele exista), caso ele nao exista ele vai inserir o dados
 var mod = {
   $set: {active: true},
   $setOnInsert: {
-name: "Need for speed", 
+name: "Street Fighter x Tekken", 
 pwd: 40, 
-plataform: "Vita", 
-velocista: 45,  
-comments: "Add jgoar online",
-online: "Sim", 
-origiem: "Plus", 
-guia: "Sim", 
-"coop" : ['fatallgamer03',
-'FS-Schezo',
-'Suvinicius'
- ], 
-platina: "Nao"}
+plataform: Vita, 
+velocista: 45,
+velocista: 45,
+ 
+description: "Sem maiores informações"}
 }
 
-#### Depois passamos o option pro true 
+#### 
 var options = {upsert: true}
 
-#### E fazemos o update
-db.achievs.update(query, mod, options)
+#### 
+db.pc.update(query, mod, options)
 
-#### Foi adcionado sem maiores complicações
-{ "_id" : ObjectId("58ab68c987de06fd0937ddfd"), "active" : true, "name" : "Need for speed", "pwd" : 40, "plataform" : "Vita", "velocista" : 45, "comments" : "Add jgoar online", "online" : "Sim", "origiem" : "Plus", "guia" : "Sim", "coop" : [ "fatallgamer03", "FS-Schezo",
- "Suvinicius" ], "platina" : "Nao" }
 
-###
+
+db.pokemons.find(query)
+{
+  "_id": ObjectId("564a89f33888e5da82899ccb"),
+  "active": true,
+  "name": "NaoExisteMon",
+  "attack": null,
+  "defense": null,
+  "height": null,
+  "description": "Sem maiores informações"
+}
+
+### multi
+
+
+
+
+
+
+
+
