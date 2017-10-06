@@ -6,7 +6,11 @@ categories: blog
 ---
 ### Cirando um applet na digita ocean
 
-iPara acessar só da o comando abaixo, seguido das informacoes que sao enviada para o email
+
+
+
+
+Para acessar só da o comando abaixo, seguido das informacoes que sao enviada para o email
 ssh root@162.243.185.21
 
 
