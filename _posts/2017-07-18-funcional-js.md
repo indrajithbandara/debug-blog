@@ -76,13 +76,13 @@ const PA = ( x ) => ( y ) => x + y // Uma funcao q recebe o valor de x, e chama 
 
 const PA_razao2 = PA( 2 ) // ( y ) => x + 2 (pq criamos um encapsulamento, e a funcao filha (y) acima tem acesso a funcao pai "x") 
 const PA_razao5 = PA( 5 ) //  ( y ) => x + 5 (Aqui estamos reutiizando novamente uma parte do nosso codigo, poderia ser  PG = ( x ) => ( y ) => x * y
-        
+ 
 console.log ( PA_razao2( 5 )  )
 console.log ( PA_razao5( 5 )  )
 
 ``
 #### Podemos observar que ele retornou os valores esperados
-$ node add.subtract.js 
+$ node add.subtract.js
 7
 10
 
@@ -97,8 +97,8 @@ const subtract = ( y ) => ( x ) => add( inverse ( y ) )( x )
 console.log( add( 4 ) ( 6 ) )
 console.log( subtract( 4 ) ( 6 ) )
 ```
-#### 
-$ node add.subtract.js 
+####
+$ node add.subtract.js
 10
 -2
 
@@ -115,7 +115,7 @@ const multiply = ( x, y ) => {  // nossa funcao pega o valor de x e y
   let result = 0;
 
   while ( y > 0 ) {  // enquanto y ( 4 ) for menor que zero
-    result = result + x  // o valor de x vai sendo alterado (let)  
+    result = result + x  // o valor de x vai sendo alterado (let)
     y = y - 1
   }
 
@@ -125,7 +125,7 @@ const multiply = ( x, y ) => {  // nossa funcao pega o valor de x e y
 console.log( multiply( 3, 5 ) )
 ``
 #### Testando podemos ve que esta tudos nos conformes...
-$ node multiply.js 
+$ node multiply.js
 15
 
 #### Aqui estamos fazendo a mesma soma acima porém usando as funcoes já criadas
@@ -145,14 +145,14 @@ const multiply = ( x ) => ( y ) => {
 
   const addX = add ( x )  // tamos adiconando o valor de "x" durante o loop
   const decrement1 = subtract ( 1 )  // tamos decrementando e com valor "1" pq inverse dah numeros negativos
-  
+
   while ( y > 0 ) {
     result = addX ( result )  // tamos adionando sempre o valor de "x' a result
-    y = decrement1 ( y ) 
-  } 
-  
+    y = decrement1 ( y )
+  }
+
   return result
-} 
+}
 
 console.log('3 x 5 =', multiply( 4 ) ( 3 ) )
 
@@ -172,12 +172,12 @@ const multiply = ( x ) => ( y ) => {
 
   const addX = add ( x )
   const decrement1 = subtract // Aqui é retirado o valor quei tira a negativa
-  
+
   while ( y > 0 ) {
     result = addX ( result )
     y = decrement1 ( y )
-  } 
-  
+  }
+
   return result
 }
 
@@ -186,32 +186,77 @@ console.log('9 / 3 =', multiply( 2 )( 100 ) )
 #### Para a exponenciação (raiz quadrada), usaremos a seguinte forma
 ```
 const pow = ( y ) => ( x ) => {
-  "use strict"; 
-  
+  "use strict";
+
   let result = 1
-  
+
   while ( y > 0 ) {
     result *= x  // O x vai  receber 3x(result = 1), e depois result vai ser 3x3 = 9
     y -= 1       // o y vai fazer o loop 2 vezes depois  3 e  4...
   }
-  
+
   return result
-} 
+}
 
 console.log (' 3^2 =', pow( 2 ) ( 3 ) )
 console.log (' 3^3 =', pow( 3 ) ( 3 ) )
 console.log (' 3^4 =', pow( 4 ) ( 3 ) )
-console.log (' 3^5 =', pow( 5 ) ( 3 ) ) 
+console.log (' 3^5 =', pow( 5 ) ( 3 ) )
 
 ```
 #### Podemos testar nosso codigo e ve que esta tudo nos funcioando perfeitamente.
 
-$ node pow.almost.there.js 
+$ node pow.almost.there.js
 
 3^2 = 9
 3^3 = 27
 3^4 = 81
 3^5 = 243
+
+## Valores boleanos
+
+#### Usaremos os dois valores da algebra
+0 = falso
+1 = verdadeiro
+
+#### Para negar usamos o operador "!" de negacao
+! = not (inverter o valor)
+
+#### Simbolos logicos
+&& = and
+|| = or
+
+#### Quando o valor testado for igual o resultado é sempre o mesmo valor para ambos operadores
+> (0 && 0)
+0
+> (0 || 0)
+0
+> ( 1 && 1)
+1
+> ( 1 || 1)
+1
+
+#### O or sempre que ele for somado com  numero negativo ele é verdadeiro
+
+( 1 || 0 )
+1
+( 0 || 1 )
+1
+
+#### 
+( 0 && 1 )
+0
+( 1 && 0 )
+0
+
+
+
+
+
+
+
+
+
 
 
 

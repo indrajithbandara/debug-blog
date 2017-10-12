@@ -6,7 +6,8 @@ categories: blog
 ---
 ### Cirando um applet na digita ocean
 
-
+Trocar dns e o mtu
+fconfig eth0 mtu 1420
 
 
 
