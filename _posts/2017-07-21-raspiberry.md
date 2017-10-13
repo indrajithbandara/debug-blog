@@ -10,6 +10,7 @@ Trocar dns e o mtu
 fconfig eth0 mtu 1420
 
 
+https://neverbenever.wordpress.com/2015/02/11/how-to-autostart-a-program-in-raspberry-pi-or-linux/
 
 Para acessar só da o comando abaixo, seguido das informacoes que sao enviada para o email
 ssh root@162.243.185.21
@@ -20,13 +21,10 @@ ssh-copy-id brazica@165.227.66.49
 
 copiar arquivos
 sudo scp vimrc brazica@165.227.66.49:/home/brazica/
-
-
 $ vim +PlugInstall
 
 
-sudo apt-get update
-sudo apt-get install apache2
+sudo apt-get sudo apt-get install apache2
 
 --- Server digita
 
