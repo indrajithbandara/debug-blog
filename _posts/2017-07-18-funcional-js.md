@@ -236,18 +236,75 @@ $ node pow.almost.there.js
 > ( 1 || 1)
 1
 
-#### O or sempre que ele for somado com  numero negativo ele é verdadeiro
-
+#### o operador "Ou" sempre que utilizado com uma premissa verdadeira (1) ele sera verdadeiro
 ( 1 || 0 )
 1
-( 0 || 1 )
+( 1 || 1 )
 1
 
-#### 
+#### Já o "E" ou "AND" quando utilizado com uma premissa falsa (0)ele sempre será falso
 ( 0 && 1 )
 0
-( 1 && 0 )
+( 0 && 1 ) 
+1
+
+#### Uma dica muito facil é usar multiplicacao para "E" e soma para "OU"
+
+## Aula 3
+
+#### O numero eh par se ele for divisivel por 2, usamos a funcao "%" para testar
+$ const ehPar = ( x ) => x % 2 === 0
+$ ehPar(4)
+true
+
+#### Para saber se eh impar eh soh usar logicamente a negacao acima.
+$ const ehImpar = ( x ) => x % 2 !== 0
+ehImpar(7)
+true
+
+#### Vejamos valores que o JS entende como falso, caso nao seja nao entra no "IF"
+$  if( !"" ) console.log('falso')
+falso
+$ if( !0 ) console.log('falso')
+falso
+$ if( !NaN ) console.log('falso')
+falso
+$ if( !null ) console.log('falso')
+falso
+$ if( !undefined ) console.log('falso')
+falso
+$ if( !false ) console.log('falso')
+falso
+
+### Só há um pequeno problema, como vemos abaixo mesmo negando o resto do valor ele retorna "True"
+$const ehPar2 = ( x ) => !x % 2
+$ ehPar2(8)
 0
+$ ehPar2(5)
+0
+
+### Pois como na matematica precisamos usar o "()" para encapsular a funcao
+$ const ehPar3 = ( x ) => !(x % 2)
+$ ehPar3(8)
+true
+
+### Aqui criamos uma clasure, ou seja, uma funcao chamando a outra
+
+const NOT = ( x ) => !x
+const isDivisibleBy = ( y ) => ( x ) => NOT( x % y )
+
+const isEven = isDivisibleBy( 2 ) // Aqui estamos executando e ele vai retornar:( x ) => NOT( x % y ) 
+que no caso é ( x % 2)
+
+console.log( 'isEven 4: ', isEven( 4 ) )
+
+#### Agora só testar e ve se o resultado é par ou impar do valor passado
+$ node aula3.js
+isEven 4:  true
+
+#### 
+
+
 
 
 
