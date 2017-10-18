@@ -302,7 +302,46 @@ console.log( 'isEven 4: ', isEven( 4 ) )
 $ node aula3.js
 isEven 4:  true
 
-#### 
+#### A funcao "filter" busca os valores do array, para passsar usamos "N.filter"
+```
+const NOT = ( x ) => !x
+
+const isDivisibleBy = ( y ) => ( x ) => NOT( x % y )
+
+const isEven = isDivisibleBy( 2 )
+const isOdd = ( x ) => NOT( isEven( x ) )
+
+const N = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+const evens = N.filter( isEven )
+const odds = N.filter( isOdd )
+
+console.log( 'Pares: ', evens ) // Pares:  [ 2, 4, 6, 8, 10 ]
+console.log( 'Ímpares: ', odds ) // Ímpares:  [ 1, 3, 5, 7, 9 ]
+```
+#### Fazendo um busca da posicao e pelo indice que ele tá interando
+const list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+const result = list.filter( ( value, index ) => {
+  console.log( 'value: ', value )
+  console.log( 'index: ', index )
+  console.log( '---------- \n' )
+
+  return true
+} )
+
+console.log( 'result: ', result )
+
+// value:  1
+// index:  0
+// ---------- 
+
+// result:  [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+
+
+
+
 
 
 
