@@ -18,8 +18,8 @@ Name=programname
 Exec=lxterminal –e “home/pi/yourprogram”
 Type=Application
 ```
-
-
+#### Programas
+$ sudo apt-get install xpdf
 
 https://neverbenever.wordpress.com/2015/02/11/how-to-autostart-a-program-in-raspberry-pi-or-linux/
 
