@@ -9,7 +9,23 @@ categories: blog
 fconfig eth0 mtu 1420
 
 #### Iniciar programas
+$ cd ~/.config/autostart $
+
+$ vim chromium.desktop
+```
+[Desktop Entry]
+Name=programname
+Exec=lxterminal –e “home/pi/yourprogram”
+Type=Application
+```
+
+
+
 https://neverbenever.wordpress.com/2015/02/11/how-to-autostart-a-program-in-raspberry-pi-or-linux/
+
+#### Audio
+$ sudo apt-get install omxplayer
+$ sudo chmod 777 /dev/vchiq
 
 
 $ vim +PlugInstall
