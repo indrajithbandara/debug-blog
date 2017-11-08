@@ -7,8 +7,13 @@ categories: blog
 
 ## Como deixar o raspberry pi nas pontas dos casfcos pra desenvolver
 
+#### Add usuario
+$ sudo adduser rx
+$ sudo adduser rx sudo
+
+
 #### Trocar dns e o mtu
-fconfig eth0 mtu 1420
+$ sudo ifconfig eth0 mtu 1420
 
 #### Iniciar programas
 $ cd ~/.config/autostart
@@ -22,8 +27,6 @@ Type=Application
 ```
 #### Programas (opcionais)
 $ sudo apt-get install xpdf
-$ sudo apt-get install omxplayer 
-* se nao funfar chmod 777 /dev/vchiq)
 
 #### Node 8x e npmm atualizados
 curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
@@ -44,4 +47,6 @@ vim +PlugInstall +qall
 
 $ vim +PlugInstall
 
-
+#### Erros
+*Omxplayer
+$ chmod 777 /dev/vchiq)
