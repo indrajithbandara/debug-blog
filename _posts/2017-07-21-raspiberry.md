@@ -33,20 +33,6 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 sudo apt-get install nodejs -y
 
 
-
-### Vim
-$ sudo apt-get install git exuberant-ctags ncurses-term curl
-$ pip3 install --user --upgrade neovim
-Download your own vimrc file at http://www.vim-bootstrap.com
-
-vim: mv ~/Downloads/generate.vim ~/.vimrc
-
-vim +PlugInstall +qall
-
-
-
-$ vim +PlugInstall
-
 #### Erros
 *Omxplayer
-$ chmod 777 /dev/vchiq)
+$ sudo chmod 777 /dev/vchiq
