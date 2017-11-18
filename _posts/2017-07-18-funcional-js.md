@@ -5,28 +5,22 @@ date:   2017-07-18 12::3 -0300
 categories: blog
 ---
 
-## Principios básicos de Javascript
-
-#### Como na matematica uma funcao é denotada quando está entre parentese
+#### o "F" é o nome da funcao, e sabemos disso por possuir parentese.
 f(x) = y  // uma funcao pode ter um, dois ou nnenhum parametros 
 
-#### Na matematica usamos a uncao acimo como essa abaixo
-x + y //
+#### Essa funcao que adciona o numero dois para cada numero que entra
+const f = (x) => 
 
-#### E para criar uma funcao para adicionar qualquer numero que entrar fazemos assim
-y = x + 2
+#### Criamos a noss funcao.
+```
+const f = (x) => x + 2 // O "X" eh uma variavel que tem que entra na funcao do "F"
 
-#### Para criar essa mesma funcao no javascript fazemos da seguinte maneira 
-const f = x + y  //Onde (f) é o nome que damos a funcao, esta correto mas falta o parentese para valor de X entrar
-
-#### Para criar uma funcao no JS, damos o nome F", e passamos o parametro que vamos definir ( x ) e atribundo o "igual" =>
-const f = ( x ) => x + 2 // E aqui falamos que o resultado dessa funcao eh X + 2
-
-### Definimos uma constante, o "F" é uma variavel que nao pode ser mudadai, se quiser mudar use o "Let"
-$ const f = ( x ) => x + 2 
-
-#### Passndo os valores correspondentes
-$ f(2) 
+console.log(f)
+console.log(f(2)
+```
+#### Depois eh soh ve o resultado
+$ node 1.js
+[Function: f]
 4
 
 #### Criamos a nossa constante  add, e etribuimos à funcao de( x, y ) que soma x + y
@@ -36,13 +30,17 @@ const add = ( x, y ) => x + y
 $ add (3, 5)
 8
 
-## Agora vamos fazer qualquer operação matemática usando apenas adição e subtração
+### Podemos criar operacoes matematica utilizando somente soma e subtracao
+$ const subtract  = ( x, y ) => x - y // Primeiro criamos a nossa funcao de subtrair
 
-#### Primeiro criamos uma funcao que retorna o x - y
-$ const subtract  = ( x, y ) => x - y
+
+
+
+
+
 
 #### Testando a nova funcao no terminal do node.JS
-$ subtract ( 5, 3 ) 
+$ subtract( 5, 3 )
 2
 
 #### E tabem podemos fazer com + -y que retorna a negação dos sinais.
@@ -56,7 +54,17 @@ $ subtract ( 5, 3 )
 const inverse = ( x ) => x * -1
 
 #### TEstamos recebemos o valor investido do valor
-inverse (2)
+inversole.log(f)
+
+
+
+
+
+
+
+
+
+  5 console.log(f(2)) (2)
 -2
 
 #### Uma funcao que retorna outra (no caso o resultado) de outra funcao
