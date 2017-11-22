@@ -11,4 +11,4 @@ github_username: debug@github
 markdown: kramdown
 
 permalink: /:title
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
