@@ -5,6 +5,14 @@ date:   2017-09-05 16:54 -0300
 categories: blog
 ---
 
+
+
+
+
+
+
+
+------
 A tabela a seguir mostra os verbos HTTP, o escopo e a semântica para os métodos que nossa primeira versão da API deve suportar.
 Cada método é composto por um verbo HTTP e um escopo e todos os métodos têm um significado bem definido para todas as mensagens e coleções.
 Em nossa API, cada mensagem tem seu próprio URL exclusivo.
