@@ -1,2 +1,7 @@
-rxon7@protonmail.com
-S3pN6TwO6xyU
+
+blog para compartilhar informações.
+
+http://rxon7.github.io/debug-blog/
+
+
+
