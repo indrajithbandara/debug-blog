@@ -1,12 +1,18 @@
 ---
 layout: post
-title:  "Pequenos tutoriais - Raspiberry, Servidor e etc"
+title:  "Raspberry pi - Minhas configurações que acho essenciais pra desenvolver"
 date:   2017-07-21 18::01 -0300
 categories: blog
 ---
-### Cirando um applet na digita ocean
+### Criando um novo usuario e dando os privilegios root
+$ sudo adduser rx
+$ sudo adduser rx sudo
 
-Trocar dns e o mtu
+
+
+
+
+#### Trocar dns e o mtu
 fconfig eth0 mtu 1420
 
 
