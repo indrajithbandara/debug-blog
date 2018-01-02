@@ -1,7 +1,8 @@
 
 #### blog pessoal para compartilhar informações.
 
-http://rxon7.github.io/debug-blog/
-
+Raspiberry pi - Minhas Configurações pesoais
+Shell Script- Comandos no terminal do Unix/Linux
+Pomodoro - Meu jeito de usar a technica
 
 
